@@ -19,11 +19,9 @@
             </div>
 
 
-
-
         </div>
 
-        <input class="btn btn-success" type="submit" value="Submit Answer" [disabled]="!questionRef.valid">
+        <input *ngIf="flag" class="btn btn-success" type="submit" value="Submit Answer" [disabled]="!questionRef.valid">
     </form>
 
 </div>

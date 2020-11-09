@@ -9,7 +9,7 @@ import { QuizService } from '../quiz.service';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-
+  flag:boolean;
   score:number = 0;
   mode:string='quiz';
 
@@ -21,6 +21,7 @@ export class QuizComponent implements OnInit {
   }
 
   loadQuiz() : void{
+    this.flag=!this.flag;
     this.quizService.loadQuestionDetails().subscribe(data=>{
       data.forEach(q=>{
         this.questionRef.addControl(String(q.id),new FormControl(null, [Validators.required]));
@@ -46,4 +47,5 @@ export class QuizComponent implements OnInit {
     }
     this.mode='result';
   }
+  
 }
