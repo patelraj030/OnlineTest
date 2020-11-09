@@ -1,0 +1,41 @@
+<div>
+    <input style="margin-left: 615px" class="btn btn-success" type="button" value="Start the Quiz" (click)="loadQuiz()" />
+</div>
+
+<hr class="my-4">
+
+<div>
+
+    <form [formGroup]="questionRef" (ngSubmit)="checkAns()">
+        <div *ngFor="let result of quizInfo">
+            <h2 class="display-6">{{result.id}}. {{result.question}}</h2>
+
+
+            <div class="form-check" *ngFor="let opt of result.options; let i = index">
+                <input class="form-check-input" type="radio" name={{result.id}} value={{i+1}} formControlName="{{result.id}}">
+                <label class="form-check-label">
+                    <p class="lead">{{opt}}</p>
+                </label>
+            </div>
+
+
+
+
+        </div>
+
+        <input class="btn btn-success" type="submit" value="Submit Answer" [disabled]="!questionRef.valid">
+    </form>
+
+</div>
+
+
+<div *ngIf="mode=='result'" class="jumbotron">
+    <div *ngIf="score>=7">
+        <p class="text-success">Congratulations You passed this Exam.</p>
+        <p style="font-size: 30px;"> Your score is {{score*10}}%.</p>
+    </div>
+    <div *ngIf="score<7">
+        <p class="text-danger">Sorry! You Failed this Exam. Your Score is below 80%.</p>
+        <p style="font-size: 30px;"> Your score is {{score*10}}%.</p>
+    </div>
+</div>

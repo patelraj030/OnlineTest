@@ -1,0 +1,114 @@
+{
+"Questions": [
+{
+"id": 1,
+"question": "An interface with no fields or methods is known as a ______.",
+"options": [
+"Runnable Interface",
+"Marker Interface",
+"Abstract Interface",
+"CharSequence Interface"
+],
+"correctIndex": 2
+},
+{
+"id": 2,
+"question": "Which of the following is not a Java features?",
+"options": [
+"Dynamic",
+"Architecture Neutral",
+"Use of pointers",
+"Object-oriented"
+],
+"correctIndex": 3
+},
+{
+"id": 3,
+"question": "_____ is used to find and fix bugs in the Java programs.",
+"options": [
+"JVM",
+"JRE",
+"JDK",
+"JDB"
+],
+"correctIndex": 4
+},
+{
+"id": 4,
+"question": "What is the return type of the hashCode() method in the Object class?",
+"options": [
+"Object",
+"int",
+"long",
+"void"
+],
+"correctIndex": 2
+},
+{
+"id": 5,
+"question": "What does the expression float a = 35 / 0 return?",
+"options": [
+"0",
+"Not a Number",
+"Infinity",
+"Run time exception"
+],
+"correctIndex": 3
+},
+{
+"id": 6,
+"question": "Which of the following tool is used to generate API documentation in HTML format from doc comments in source code?",
+"options": [
+"javap tool",
+"javaw command",
+"Javadoc tool",
+"javah command"
+],
+"correctIndex": 3
+},
+{
+"id": 7,
+"question": "Which of the following creates a List of 3 visible items and multiple selections abled?",
+"options": [
+"new List(false, 3)",
+"new List(3, true)",
+"new List(true, 3)",
+"new List(3, false)"
+],
+"correctIndex": 2
+},
+{
+"id": 8,
+"question": "Which method of the Class.class is used to determine the name of a class represented by the class object as a String?",
+"options": [
+"getClass()",
+"intern()",
+"getName()",
+"toString()"
+],
+"correctIndex": 3
+},
+{
+"id": 9,
+"question": "In which process, a local variable has the same name as one of the instance variables?",
+"options": [
+"Serialization",
+"Variable Shadowing",
+"Abstraction",
+"Multi-threading"
+],
+"correctIndex": 2
+},
+{
+"id": 10,
+"question": "Which of the following is true about the anonymous inner class?",
+"options": [
+"It has only methods",
+"Objects can't be created",
+"It has a fixed class name",
+"It has no class name"
+],
+"correctIndex": 4
+}
+]
+}
